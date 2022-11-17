@@ -1,0 +1,246 @@
+body {
+  background: #131516;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.container h1 {
+  color: white;
+  font-weight: 500;
+}
+
+.container-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-chat .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row input {
+  color: #a9a9a9;
+  font-weight: 700;
+  margin-left: 10px;
+  border: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  text-indent: 10px;
+}
+
+.row input:focus {
+  outline: none;
+}
+
+.btn-submit {
+  background: #00bfff;
+  color: white;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-submit:hover {
+  font-size: 18px;
+}
+
+#h1-room {
+  position: absolute;
+  margin-top: -600px;
+  margin-left: -600px;
+  color: #8C8C8C;
+}
+
+.logout {
+  width: 140px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: #e8e6e3;
+  border: 1px solid #e8e6e3;
+  cursor: pointer;
+  font-size: 13px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.logout:hover {
+  color: white;
+  font-size: 14px;
+  background: linear-gradient(to bottom, #0088CC, #e8e6e3);
+  border: none;
+}
+
+.list-users {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 250px;
+  height: 655px;
+  color: #d8d4cf;
+  box-shadow: 0.5px 0px #999;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-users .list-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.list-users label {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.label-user {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.user {
+  width: 220px;
+  height: 35px;
+  border: none;
+  box-shadow: 0px 0.5px rgba(102, 100, 100, 0.493);
+  margin-top: 10px;
+}
+
+.user label {
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+  color: #8C8C8C;
+  font-weight: 500;
+}
+
+.list-messages {
+  width: 900px;
+  height: 400px;
+  margin-left: 50px;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#message-input {
+  border: 1px solid gray;
+  background: #202324;
+  color: #8C8C8C;
+  border-radius: 5px;
+  width: 600px;
+  height: 30px;
+  text-indent: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#message-input:focus {
+  outline: none;
+}
+
+.form-label {
+  position: relative;
+  color: white;
+}
+
+.new_message .form-label strong{
+  word-break: break-word;
+}
+
+#left-message .form-label span {
+  width: 150px;
+  position: absolute;
+  left: -5px;
+  top: -15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+
+#left-message {
+  background: #00bfff;
+  width: 200px;
+  height: 45px;
+  margin-left: 5px;
+  margin-top: 18px;
+  border-radius: 2px 15px 2px 15px;
+  font-size: small;
+}
+
+#right-message {
+  background: #4682b4;
+  width: 200px;
+  height: 45px;
+  resize: both;
+  margin-left: 670px;
+  margin-top: 18px;
+  border-radius: 15px 2px 15px 2px;
+  font-size: small;
+}
+
+#left-message .form-label strong {
+  position: relative;
+  left: 10px;
+}
+
+#right-message .form-label strong {
+  position: absolute;
+  right: -190px;
+  top: 1px;
+  float: right;
+}
+
+#right-message .form-label span {
+  width: 150px;
+  position: absolute;
+  left: 147px;
+  top: -15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #202324;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(91, 99, 103);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::placeholder {
+  color: #8C8C8C;
+}

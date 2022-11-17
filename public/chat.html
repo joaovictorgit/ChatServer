@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="chat.css" />
+        <title>ChatServer</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/134/134914.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 id="h1-room">Sala </h1>
+            <div class="container-row">
+                <div class="chat">
+                    <div class="list-messages" id="list-messages">
+                        <!--
+
+                            <div class="new_message" id="left-message">
+                                <label class="form-label">
+                                    <strong> texto </strong> <span>  username - data </span>
+                                </label>
+                            </div>
+    
+                            <div class="new_message" id="right-message">
+                                <label class="form-label">
+                                    <strong> texto </strong> <span> data - username </span>
+                                </label>
+                            </div>
+                        -->
+                    </div>
+                    <i class="fa fa-send-o" style="position: relative; left: 630px; color: #229ED9;"></i>
+                    <input type="text" placeholder="Digite sua mensagem" id="message-input"/>
+                    
+                </div>
+                <div class="list-users">
+                    <label class="list-title">Lista de usuários conectados</label>
+                    </br>
+                    </br>
+                    <div class="label-user" id="label-user">
+                        
+                    </div>
+                </div>
+            </div>
+            <form action="index.html">
+                <button class="logout" id="logout">Logout</button>
+            </form>
+        </div>
+    </body>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+        integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+    ></script>
+        
+
+</html>
+<!--
+    <div class="new_message" id="left-message">
+                            <label class="form-label">
+                                <strong> texto </strong> <span>  data </span>
+                            </label>
+                        </div>
+
+                        <div class="new_message" id="right-message">
+                            <label class="form-label">
+                                <strong> texto </strong> <span>  data </span>
+                            </label>
+                        </div>
+-->

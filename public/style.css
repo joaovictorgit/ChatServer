@@ -1,0 +1,60 @@
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4682B4), to(	black)) fixed;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.container h1 {
+    color: white;
+    font-weight: 500;
+}
+
+.container-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-chat .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row input {
+    color: #A9A9A9;
+    font-weight: 700;
+    margin-left: 10px;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+.row input:focus {
+    outline: none;
+}
+
+.btn-submit {
+    background: #00BFFF;
+    color: white;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-submit:hover {
+    font-size: 18px;
+}
