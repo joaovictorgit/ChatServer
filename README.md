@@ -16,4 +16,3 @@ Aplicação, desenvolvida em HTML, CSS e JS, que utiliza websockets para enviar 
     ![initial-page](./images/home-screen.png)
  - Tela Principal
     ![initial-page](./images/main-screen.png)
- - Envio e recebimento das mensagens
